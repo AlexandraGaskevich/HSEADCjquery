@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery.js" charset="utf-8"></script>
+
+    <style>
+      #test {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+      }
+      .blue {
+        background-color: blue !important;
+        transition: all 3s ease;
+        transform: scale(2) rotate(20deg) translateX(100px) skewX(30deg);
+-webkit-transform: scale(2) rotate(20deg) translateX(100px) skewX(30deg);
+-o-transform: scale(2) rotate(20deg) translateX(100px) skewX(30deg);
+-ms-transform: scale(2) rotate(20deg) translateX(100px) skewX(30deg);
+transform: scale(2) rotate(20deg) translateX(100px) skewX(30deg);
+      }
+
+    </style>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+        let testElement = document.getElementById("test")
+        $(testElement).addClass("blue")
+
+        console.log("Yo!", testElement);
+      })
+    </script>
+
+  </head>
+  <body>
+
+    <div id="test"></div>
+
+  </body>
+</html>
